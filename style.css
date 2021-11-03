@@ -11,7 +11,7 @@ h1 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
+    font-size: 50px;
     align-items: center;
 }
 h2 {
@@ -37,6 +37,41 @@ input{
     text-align: center;
 }
 
+#startButton {
+  background: var(--secondary-color);
+  color: var(--primaryary-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+  width: 25%;
+}
+
+#initials {
+    background: var(--tertiary-color);
+    color: var(--primaryary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    width: 20%;
+}
+
+#submitScore {
+  background: var(--secondary-color);
+  color: var(--primaryary-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  width: 10%; 
+}
+
+#playAgain {
+    background: var(--secondary-color);
+    color: var(--primaryary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    width: 10%; 
+  }
 
 /* Footer */
 #footer {
