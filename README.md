@@ -22,6 +22,7 @@ THEN I can save my initials and score
 
 ## Technologies used:
 * HTML
+* CSS
 * JavaScript
 
 ## MADE BY:
