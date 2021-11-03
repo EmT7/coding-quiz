@@ -1,0 +1,50 @@
+:root {
+    background-color: lightseagreen;
+    --primary-color: dark blue;
+    --secondary-color: orange;
+    --tertiary-color: silver;
+    }
+
+
+h1 {
+    color: var(--secondary-color); 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    align-items: center;
+}
+h2 {
+    color: var(--secondary-color); 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    margin: 0;
+    font-size: 28px;
+    align-items: center;
+}
+
+.container {
+    margin:auto;
+    align-items: center;
+    display: flexbox;
+    justify-content: space-between;
+    padding: 40px 35px;
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    text-align: center;
+}
+
+
+/* Footer */
+#footer {
+    margin:auto;
+    align-items: center;
+    display: flexbox;
+    justify-content: space-between;
+    padding: 40px 35px;
+    width: 100%;
+    text-align: center; 
+}
