@@ -4,22 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Miranda's Coding Quiz</title>
 </head>
 <body>
     <main>
+        <!-- Greeting and Start Button -->
     <div class="container">
-        <div id="startquiz">
-    <h1>Timed Coding Quiz</h1>
-    <h2>Test your knowledge of HTML, CSS and JavaScript!</h2>
-        <button id="startbutton">
+        <div id="startQuiz">
+        <h1>Timed Coding Quiz</h1>
+        <h2>Test your knowledge of HTML, CSS and JavaScript!
+            Think Fast!!</h2>
+        <button id="startButton">
             <a href="./script.js">Begin Quiz</a>
         </button>
+        </div>
+
+        <!-- Quiz -->
+        <div id="quiz">
+        <!-- Timer -->
+        <div id="timer"> Time Remaining: </div>
+        <!-- Questions -->
+        <div id="questions"></div>
+        <!-- Results -->
+        <div id="result"></div>
+        <!-- Quiz Ends -->
+        <div id="quizEnded"></div>
+        <!-- Final Score -->
+        <div id="finalScore"></div>
+        <input type="text" size = "50" placeholder="Enter Your Initials for the High Score" id="initials" name="initials"/>
+        <button id="submitScore">Submit Score</button>
+        </div>
+
+    <!-- High Score -->
+        <div id="highScore">
+        <h2> Player Initials </h2>
+        <h2> Score </h2>
+        </div>
+
+    <!-- End of Quiz -->
+        <div id="endQuiz">
+        <button id="playAgain" onclick="replay()">Re-play</button>
+        </div>
+
     </div>
 
     </main>
-        <script>
-    
+
+        <script src="script.js">
         </script> 
 </body>
 </html>
