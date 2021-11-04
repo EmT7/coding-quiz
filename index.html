@@ -10,7 +10,7 @@
 <body>
     <main>
         <!-- Greeting and Start Button -->
-    <div class="container">
+    <div class="container" id="startpage">
         <div id="startQuiz">
         <h1>Timed Coding Quiz</h1>
         <br>
@@ -18,9 +18,10 @@
             <br>
             <h2>Think Fast!!</h2>
             <br>
-        <button id="startButton">
-            <a href="./script.js">Begin Quiz</a>
+        <button id="startBtn">
+            <a>Begin Quiz</a>
         </button>
+        
         </div>
 
 <div class="container">
@@ -31,14 +32,16 @@
 
         <!-- Questions -->
         <div id="questions"></div>
-            <!-- <button id="a" onclick="checkAnswer('a')">A</button>
-            <button id="b" onclick="checkAnswer('b')">B</button>
-            <button id="c" onclick="checkAnswer('c')">C</button>
-            <button id="d" onclick="checkAnswer('d')">D</button> -->
-        
+            <button id="a" onclick="checkAnswer('a')"></button>
+            <button id="b" onclick="checkAnswer('b')"></button>
+            <button id="c" onclick="checkAnswer('c')"></button>
+            <button id="d" onclick="checkAnswer('d')"></button>
+        <br>
+        <br>
         <!-- Results -->
         <div id="result"> </div>
     </div>
+
         <!-- Quiz Ends -->
         <div id="quizEnded"></div>
         <!-- Final Score -->
@@ -60,6 +63,8 @@
 
     </div>
 
+    
+
 
     <!-- Footer -->
     <div id="footer">
@@ -68,7 +73,6 @@
 
     </main>
 
-        <script src="script.js">
-        </script> 
+        <script src="./script.js" type="text/javascript"></script> 
 </body>
 </html>

@@ -37,7 +37,7 @@ input{
     text-align: center;
 }
 
-#startButton {
+#startBtn {
   background: var(--secondary-color);
   color: var(--primaryary-color);
   text-align: center;
