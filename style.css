@@ -64,7 +64,7 @@ input{
   width: 10%; 
 }
 
-#playAgain {
+#replay {
     background: var(--secondary-color);
     color: var(--primaryary-color);
     text-align: center;
@@ -72,6 +72,11 @@ input{
     font-size: 16px;
     width: 10%; 
   }
+
+  #endGameBtns {
+    width: 100%
+  }
+
 
   #clearHighscore {
     background: var(--secondary-color);
@@ -86,7 +91,7 @@ input{
     margin:auto;
     align-items: center;
     display: flexbox;
-    justify-content: space-between;
+    justify-content:center;
     padding: 40px 35px;
     width: 100%;
     text-align: center;

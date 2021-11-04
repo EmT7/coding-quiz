@@ -60,11 +60,11 @@ var quizQuestions = [
     correctAnswer: "d"},
 ];
 
-// Timer & Score
+// Score
 var quizTimer = document.getElementById("timer");
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
-var timeLeft = 65;
+var timeLeft = 40;
 var timerInterval;
 var score = 0;
 var correct;
@@ -89,7 +89,7 @@ function startQuiz(){
     startQuizDiv.style.display = "none";
     generateQuizQuestion();
 
-    //Timer
+//     //Timer
     timerInterval = setInterval(function() {
         timeLeft--;
         quizTimer.textContent = "Time left: " + timeLeft;
@@ -101,6 +101,27 @@ function startQuiz(){
       }, 1000);
     quizBody.style.display = "block";
 }
+
+
+function selectAnswer(userAnswer) {
+    if (userAnswer === quizQuestions[questionNumber].correct) {
+        instantResult.textContent = 'Correct!'
+        userScore++
+    } else {
+        timeLeft -= -10;
+        instantResult.textContent = 'Wrong!'
+    }
+    setTimeout(function () {
+        questionNumber++
+        if (quizQuestions.length > questionNumber) {
+            getQuestion();
+        }
+        else {
+            quizEnd();
+        }
+    }, 1000);
+}
+
 
 var resultsEl = document.getElementById("result");
 function showScore(){
@@ -177,7 +198,7 @@ function replayQuiz(){
     highscoreContainer.style.display = "none";
     quizEndedDiv.style.display = "none";
     startQuizDiv.style.display = "flex";
-    timeLeft = 65;
+    timeLeft = 40;
     score = 0;
     currentQuestionIndex = 0;
 }
