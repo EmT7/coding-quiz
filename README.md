@@ -25,6 +25,11 @@ THEN I can save my initials and score
 * CSS
 * JavaScript
 
+## Demonstration & Deployment:
+https://mirandat77.github.io/coding-quiz/
+![Untitled](https://user-images.githubusercontent.com/88161424/140429443-7bce6a4d-d83b-4292-b96e-d3b10234df7a.png)
+
+
 ## MADE BY:
 Miranda T
 
