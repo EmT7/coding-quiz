@@ -73,6 +73,25 @@ input{
     width: 10%; 
   }
 
+  #clearHighscore {
+    background: var(--secondary-color);
+    color: var(--primaryary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    width: 10%;
+  }
+
+  #highscoreContainer {
+    margin:auto;
+    align-items: center;
+    display: flexbox;
+    justify-content: space-between;
+    padding: 40px 35px;
+    width: 100%;
+    text-align: center;
+}
+
 /* Footer */
 #footer {
     margin:auto;

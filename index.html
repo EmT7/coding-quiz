@@ -11,6 +11,7 @@
     <main>
         <!-- Greeting and Start Button -->
     <div class="container" id="startpage">
+
         <div id="startQuiz">
         <h1>Timed Coding Quiz</h1>
         <br>
@@ -24,7 +25,7 @@
         
         </div>
 
-<div class="container">
+    <div class="container">
         <!-- Quiz -->
     <div id="quiz">
         <!-- Timer -->
@@ -51,10 +52,26 @@
         
 
     <!-- High Score -->
+    <div id="highscoreContainer">
+
+        <div id="high-scorePage">
+            <div id="highscore-header">
         <div id="highScore">
         <h2> Player Initials: </h2>
         <h2> Score: </h2>
+            </div>
         </div>
+        </div>
+
+        <div id = "highscore-initials">
+        <div id = "highscore-score">
+        </div>
+        </div>
+        <div id="endGameBtns">
+        <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+        <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
+        </div>
+    </div>
 
     <!-- End of Quiz -->
         <div id="endQuiz">

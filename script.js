@@ -1,8 +1,8 @@
-var quizBody = document.getElementById("quiz");
-var resultsEl = document.getElementById("result");
+// var quizBody = document.getElementById("quiz");
+
 var finalScoreEl = document.getElementById("finalScore");
 var quizEndedDiv = document.getElementById("quizEnded");
-var questionsEl = document.getElementById("questions");
+
 var quizTimer = document.getElementById("timer");
 var startQuizButton = document.getElementById("startBtn");
 var startQuizDiv = document.getElementById("startpage");
@@ -20,6 +20,8 @@ var buttonB = document.getElementById("b");
 var buttonC = document.getElementById("c");
 var buttonD = document.getElementById("d");
 
+var quizBody = document.getElementById("quiz");
+var questionsEl = document.getElementById("questions");
 var quizQuestions = [
     {
     question: "What does CSS stand for?",
@@ -59,6 +61,7 @@ var quizQuestions = [
 ];
 
 // Timer & Score
+var quizTimer = document.getElementById("timer");
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
 var timeLeft = 65;
@@ -99,6 +102,7 @@ function startQuiz(){
     quizBody.style.display = "block";
 }
 
+var resultsEl = document.getElementById("result");
 function showScore(){
     quizBody.style.display = "none"
     quizEndedDiv.style.display = "flex";
@@ -184,12 +188,12 @@ function checkAnswer(answer){
 
     if (answer === correct && currentQuestionIndex !== finalQuestionIndex){
         score++;
-        alert("That Is Correct!");
+        alert("Correct!");
         currentQuestionIndex++;
         generateQuizQuestion();
         
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
-        alert("That Is Incorrect.")
+        alert("Incorrect")
         currentQuestionIndex++;
         generateQuizQuestion();
         
